@@ -1,4 +1,5 @@
-import 'package:material_ui/material_ui.dart';
+// ignore: deprecated_member_use\n
+import 'package:flutter/material.dart';
 
 import '../../domain/entities/product.dart';
 

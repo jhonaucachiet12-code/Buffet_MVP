@@ -1,4 +1,4 @@
-// ignore: deprecated_member_use\n
+// ignore: deprecated_member_use
 import 'package:flutter/material.dart';
 
 import '../../domain/entities/product.dart';

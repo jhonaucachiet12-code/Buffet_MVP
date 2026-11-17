@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import 'core/theme/app_theme.dart';
-import 'data/repositories/mock_product_repository.dart';
+import 'data/repositories/api_product_repository.dart'; // <-- IMPORTANTE: nuevo import
 import 'domain/repositories/product_repository.dart';
 import 'presentation/providers/cart_provider.dart';
 import 'presentation/providers/order_provider.dart';
@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        Provider<ProductRepository>(create: (_) => MockProductRepository()),
+        // Usamos el repositorio real conectado al backend
+        Provider<ProductRepository>(create: (_) => ApiProductRepository()),
         ChangeNotifierProvider(create: (_) => CartProvider()),
         ChangeNotifierProvider(create: (_) => OrderProvider()),
       ],

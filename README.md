@@ -1,3 +1,8 @@
+<h1 align="center">E.T. Nº12 D.E. 1º "Libertador Gral. José de San Martín"</h1>
+<h1 align="center"> Buffet Express </h1>
+<p align="center">
+  <img width="259" height="324" alt="image" src="https://github.com/user-attachments/assets/1cd285c6-aeba-46ba-b38d-4ef0b6ce5a65" />
+
 ### Buffet MVP
 
 Versión inicial de Buffet Express, una aplicación de buffet desarrollada con Flutter y organizada mediante una arquitectura por capas.

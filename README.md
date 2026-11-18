@@ -21,6 +21,46 @@ Gestión de pedidos.
 Esquema SQL para MySQL.
 Compatible con Android, iOS, web y escritorio.
 
+## arquitectura técnica
+La arquitectura del MVP es  El patrón de repositorio.
+## buffet_express
+```
+┣ core/
+ ┃ ┣ theme/
+ ┃ ┗ utils/
+ ┣ data/
+ ┃ ┣ models/
+ ┃ ┣ repositories/ (Implementaciones)
+ ┃ ┗ datasources/ (Llamadas a API/Mock)
+ ┣ domain/
+ ┃ ┣ entities/
+ ┃ ┗ repositories/ (Contratos/Interfaces)
+ ┣ presentation/
+ ┃ ┣ providers/
+ ┃ ┣ screens/
+ ┃ ┗ widgets/
+ ┗ main.dart
+```
+## buffet_backend
+```
+buffet_backend/
+ ┣ 📂 lib/
+ ┃ ┗ 📂 src/
+ ┃   ┗ 📜 database.dart       
+ ┣ 📂 routes/
+ ┃ ┣ 📂 orders/
+ ┃ ┃ ┗ 📜 index.dart          
+ ┃ ┣ 📂 products/
+ ┃ ┃ ┗ 📜 index.dart         
+ ┃ ┗ 📜 index.dart            
+ ┣ 📜 .env                    
+ ┣ 📜 pubspec.yaml            
+ ┗ 📜 README.md               
+```
+## Tablero ágil
+
+https://trello.com/invite/b/6ae09d1764068a2a62d39d3c/ATTI10b8bcbc659bbda6c5e1030efbb36a895BB0575B/sprint-del-bufet
+
 ## Tecnologías
 
 Flutter y Dart
